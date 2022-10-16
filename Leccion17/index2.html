@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Manejo Dom Con Js</title>
+</head>
+
+<body>
+    <h1 id="titulo">Manejo Dom Con Js</h1>
+    <br />
+    <div id="mostrar">Mostra el Cambio</div>
+    <script>
+        document.getElementById('titulo').onclick = cambiarTexto;
+        function cambiarTexto() {
+            document.getElementById('mostrar').innerHTML = "Nuevo Contenido";
+        }
+    </script>
+</body>
+
+</html>

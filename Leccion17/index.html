@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Manejo Dom Con Js</title>
+</head>
+
+<body>
+    <h1 onclick="cambiarT(this)">Manejo Dom Con Js</h1>
+    <br />
+    <script>
+        function cambiarT(titulo) {
+            console.log(titulo);
+            console.log(titulo.innerHTML);
+            titulo.innerHTML = "Titulo cambiado";
+        }
+    </script>
+</body>
+
+</html>

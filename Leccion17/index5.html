@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Manejo Dom Con Js</title>
+</head>
+
+<body>
+    <h1 id="titulo" onmousedown="rojo(this)" onmouseup="green(this)" onclick="blue(this)">Manejo Dom Con Js</h1>
+    <br />
+    <script>
+        function rojo(titulo) {
+            titulo.style.color = ("red");
+            console.log("onmousedown cambio a Rojo")
+        }
+        function green(titulo) {
+            titulo.style.color = ("green");
+            console.log("onmouseup cambio a verde")
+
+        }
+        function blue(titulo) {
+            titulo.style.color = ("blue");
+            console.log("cambio a azul")
+
+        }
+    </script>
+</body>
+
+</html>
