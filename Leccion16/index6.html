@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ejemplo Formulario con Js</title>
+</head>
+
+<body>
+    <form action="" id="formulario">
+        Nombre: <input type="text" name="nombre" value="Juan">
+        <br />
+        Apellido: <input type="text" name="apellido" value="Perez">
+        <br />
+    </form>
+    <button onclick="mostrarValores()">Mostrar</button>
+    <div id="valores">
+
+    </div>
+    <script>
+        function mostrarValores() {
+            let formulario = document.forms['formulario'];
+            let nombre = formulario['nombre'];
+            let apellido = formulario['apellido'];
+            let texto = nombre.value + " <br/> <br/>" + apellido.value;
+            document.getElementById('valores').innerHTML = texto
+            console.log(texto);
+        }
+    </script>
+</body>
+
+</html>

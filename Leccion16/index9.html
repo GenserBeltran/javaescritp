@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Manejo de DOM con Js</title>
+</head>
+
+<body>
+    <h1 id="titulo">Manejo DOM con JavaScript</h1>
+    <button onclick="mostrar()">Mostrar Concatenado</button>
+    <br />
+    <img src="http://globalmentoring.com.mx/imagenes/javascript.png" alt="" id="imagen">
+    <script>
+        function mostrar() {
+            document.getElementById('imagen').src = 'http://globalmentoring.com.mx/imagenes/html5.png';
+        }
+    </script>
+</body>
+
+</html>

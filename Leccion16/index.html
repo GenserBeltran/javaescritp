@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ejemplo DOM HTML con Js</title>
+</head>
+
+<body>
+    <h1 id="cabecero">Ejemplo DOM HTML con Js</h1>
+    <p id="parrafo">Saludos</p>
+    <p id="parrafo2"> Hola Mundo DOM</p>
+    <script>
+        let cabecero = document.getElementById("cabecero").innerHTML;
+        console.log(`Valor cabecero: ${cabecero}`);
+
+        let parrafo = document.getElementById("parrafo").innerHTML;
+        console.log(`Valor parrafo: ${parrafo}`);
+
+        //Modifcar contenido de la etiqueta p
+        document.getElementById("parrafo").innerHTML = 'Modificado: Nuevo Valor del Parrafo';
+
+        //Modifcar contenido de la etiqueta h1
+        document.getElementById("cabecero").innerHTML = 'Modificado: Ejemplo DOM HTML con Js';
+
+    </script>
+</body>
+
+</html>

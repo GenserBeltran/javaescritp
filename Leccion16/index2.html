@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ejemplo DOM HTML con Js</title>
+</head>
+
+<body>
+    <h1 id="cabecero">Ejemplo DOM HTML con Js</h1>
+    <p id="parrafo">Saludos</p>
+    <p id="parrafo2"> Hola Mundo DOM modificando js</p>
+    <script>
+        let parrafos = document.getElementsByTagName("p");
+        console.log(`# De parrafos: ${parrafos.length}`);
+        for (let i = 0; i < parrafos.length; i++) {
+            console.log(`Elemento P: ${i} - ${parrafos[i].innerHTML}`);
+        }
+    </script>
+</body>
+
+</html>
